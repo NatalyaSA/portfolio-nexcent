@@ -1,0 +1,82 @@
+@use 'helpers' as *;
+
+html {
+  &.is-lock {
+    overflow: hidden;
+  }
+}
+
+body {
+    @include fluid-text(16, 14);
+
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-base);
+    color: var(--color-neutral-grey);
+    background-color: var(--color-white);
+    line-height: 150%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: var(--color-neutral-d-grey);
+    font-weight: 600;
+}
+
+h1, .h1 {
+    @include fluid-text(64, 30);
+
+    line-height: 119%;
+}
+
+h2, .h2 {
+    @include fluid-text(36, 22);
+    
+    line-height: 122%;
+}
+
+h3, .h3 {
+    @include fluid-text(28, 18);
+    
+    line-height: 129%;
+    font-weight: 700;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+
+  @include hover {
+    color: var(--color-tint-2);
+  }
+
+  &[class] {
+    text-decoration: none;
+  }
+}
+
+:focus-visible {
+  outline: rem(2) solid var(--color-neutral-d-grey);
+  border-radius: rem(4);
+  transition-duration: 0s !important;
+}
+
+.header_color_primary {
+  color: var(--color-primary);
+}

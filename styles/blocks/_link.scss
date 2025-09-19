@@ -1,0 +1,7 @@
+@use '../helpers' as *;
+
+.link {
+    font-weight: 600;
+    font-size: rem(20);
+    color: var(--color-primary);
+}

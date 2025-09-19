@@ -1,0 +1,32 @@
+@use '../helpers' as *;
+
+.article {
+    background-color: var(--color-white);
+    display: flex;
+    column-gap: fluid(50, 5);
+    align-items: center;
+    margin-bottom: fluid(48, 25);
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: rem(10);
+    }
+
+    &__image {
+        width: fluid(442, 225);
+    }
+
+    &__body {
+        max-width: rem(601);
+    }
+
+    &__header {
+        padding-bottom: rem(16);
+    }
+
+    &__text {
+        padding-bottom: fluid(32, 16);
+        font-size: rem(14);
+        line-height: 143%;
+    }
+}

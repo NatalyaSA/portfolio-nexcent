@@ -1,0 +1,27 @@
+@use 'helpers' as *;
+
+:root {
+    --color-white: #FFFFFF;
+    --color-silver: #F5F7FA;
+
+    --color-neutral-grey: #717171;
+    --color-neutral-d-grey: #4D4D4D;
+    --color-neutral-l-grey: #89939E;
+    --color-neutral-black: #263238;
+    --color-gray-900: #18191F;
+
+    --color-tint-1: #66BB69;
+    --color-tint-2: #81C784;
+    --color-tint-5: #E8F5E9;
+
+    --color-primary: #4CAF4F;
+
+    --color-secondary: #263238;
+
+    --font-family-base: 'Inter', sans-serif;
+
+    --container-width: #{rem(1152)};
+    --container-padding-x: #{fluid(144, 16)};
+
+    --transition-duration: 0.2s;
+}

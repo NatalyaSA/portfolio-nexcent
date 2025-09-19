@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.soc1als {
+    &__list {
+        display: flex;
+        column-gap: fluid(16, 10);
+    }
+
+    // &__item {
+    //     @include square(rem(32));
+        
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     background-color: var(--color-neutral-d-grey);
+    //     border-radius: 50%;
+
+    //     @include hover {
+    //         background-color: transparent;
+    //     }
+    // }
+
+    &__link {
+        color: var(--color-white);
+    }
+}

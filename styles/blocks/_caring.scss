@@ -1,0 +1,65 @@
+@use '../helpers' as *;
+
+.caring {
+    margin-top: fluid(48, 24);
+    margin-bottom: fluid(175, 115);
+    text-align: center;
+
+    &__text {
+        padding-top: rem(8);
+        padding-bottom: rem(16);
+        margin-inline: auto;
+        max-width: rem(628);
+    }
+
+    &__examples {
+        display: flex;
+        column-gap: fluid(24, 10);
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+            row-gap: fluid(100, 80);
+        }
+    }
+
+    &__example {
+        width: fluid(368, 250);
+        height: fluid(286, 200);
+        border-radius: rem(8);
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+
+        &-1 {
+            background-image: url('../../images/image-2.jpg');
+        }
+
+        &-2 {
+            background-image: url('../../images/image-3.jpg');
+            background-size: 180% 100%;
+        }
+
+        &-3 {
+            background-image: url('../../images/image-4.jpg');
+        }
+
+        &-info {
+            position: absolute;
+            left: 7%;
+            right: 7%;
+            bottom: -25%;
+            border-radius: rem(8);
+            padding: fluid(20, 10);
+            background-color: var(--color-silver);
+            box-shadow: 0 rem(8) rem(16) 0 rgba(171, 190, 209, 0.4);
+        }
+
+        &-text {
+            padding-bottom: rem(16);
+            font-weight: 600;
+            font-size: fluid(20, 16);
+            line-height: 140%;
+        }
+    }
+}

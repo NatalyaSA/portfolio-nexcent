@@ -1,0 +1,33 @@
+@use '../helpers' as *;
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    padding: rem(14) rem(32);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: rem(4);
+    white-space: nowrap;
+
+    @include hover {
+        color: var(--color-white);
+        background-color: var(--color-tint-2);
+    }
+
+    &_transparent {
+        background-color: transparent;
+        color: var(--color-primary);
+        
+        @include hover {
+            background-color: transparent;
+            color: var(--color-tint-2);
+        }
+    }
+
+    &_small {
+        padding: rem(10) fluid(20, 3);
+        border-radius: rem(6);
+        font-weight: 500;
+        font-size: rem(14);
+    }
+}

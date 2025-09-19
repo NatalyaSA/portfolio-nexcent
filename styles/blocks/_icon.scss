@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(8);
+
+    &::after {
+        --size: #{rem(24)};
+
+        @include square(var(--size));
+
+        content: '';
+        flex-shrink: 0;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &-arrow_green::after {
+        background-image: url('../../icons/arrow-right_green.svg');
+    }
+
+    &-arrow_white::after {
+        --size: #{rem(16)};
+        background-image: url('../../icons/arrow-right_white.svg');
+    }
+}

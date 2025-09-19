@@ -1,0 +1,32 @@
+@use '../helpers' as *;
+
+.clients {
+    text-align: center;
+    margin-top: fluid(40, 18);
+
+    &__text {
+        padding-top: rem(8);
+    }
+
+    &__logos {
+        padding-top: fluid(41, 18);
+        padding-bottom: fluid(25, 18);
+        display: flex;
+        column-gap: fluid(136, 10);
+        justify-content: center;
+
+        @include mobile {
+            flex-wrap: wrap;
+        }
+
+        &-combine{
+            display: contents;
+
+            @include mobile {
+                display: flex;
+                column-gap: fluid(100, 10);
+                justify-content: center;
+            }
+        }
+    }
+}
