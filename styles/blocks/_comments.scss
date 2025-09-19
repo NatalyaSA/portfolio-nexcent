@@ -14,12 +14,6 @@
 
     &__image {
         @include square(fluid(326, 250));
-
-        background-image: url('../../images/image-1.jpg');
-        background-position: center center;
-        background-size: cover;
-        border-radius: rem(8);
-        box-shadow: 0 rem(8) rem(16) 0 rgba(171, 190, 209, 0.4);
         flex-shrink: 0;
     }
 

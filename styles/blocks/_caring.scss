@@ -25,24 +25,7 @@
 
     &__example {
         width: fluid(368, 250);
-        height: fluid(286, 200);
-        border-radius: rem(8);
         position: relative;
-        background-position: center center;
-        background-size: cover;
-
-        &-1 {
-            background-image: url('../../images/image-2.jpg');
-        }
-
-        &-2 {
-            background-image: url('../../images/image-3.jpg');
-            background-size: 180% 100%;
-        }
-
-        &-3 {
-            background-image: url('../../images/image-4.jpg');
-        }
 
         &-info {
             position: absolute;

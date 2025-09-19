@@ -26,3 +26,9 @@
         background-image: url('../../icons/arrow-right_white.svg');
     }
 }
+
+.text_with_icon {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(8);
+}
